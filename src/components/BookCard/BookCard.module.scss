@@ -1,0 +1,41 @@
+.BookCard {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 20%;
+  min-width: 200px;
+  border: 1px solid black;
+  background-color: black;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.BookCard:hover {
+  background-color: #191919;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  transform: scale(1.02);
+}
+
+.category {
+  font-weight: bold;
+}
+
+.image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.err {
+  align-self: center;
+  font-weight: bold;
+  color: rgb(128, 0, 0);
+}
+
+.bookImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

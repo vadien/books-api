@@ -1,6 +1,7 @@
 .BooksPage {
   width: clamp(200px, 90%, 800px);
   margin: auto;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,4 +30,12 @@ button {
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: break-word;
+}
+
+.returnLink {
+  color: #aaa;
+}
+
+.returnLink:visited {
+  color: #aaa;
 }

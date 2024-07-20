@@ -21,6 +21,10 @@ const BooksPage = () => {
       <SearchBar onSearch={onSearch} />
       <br />
       <BooksLoader />
+      <br />
+      <a href="https://www.neilld.com" style={{ color: "#AAAAAA" }}>
+        Return to NeillD.com
+      </a>
     </div>
   );
 };

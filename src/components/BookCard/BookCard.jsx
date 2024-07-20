@@ -2,28 +2,27 @@ import styles from "./BookCard.module.scss";
 
 // clean data before passing into card
 
-const BookCard = ({ book }) => {
+const BookCard = ({ book, onClick }) => {
   const checkAuthorInfo = () => {
-    if (book.authors.join(", ") === "No author info") {
+    if (book.authors.join(", ") === "No info") {
       return styles.err;
     }
     return;
   };
 
   return (
-    <div className={styles.BookCard}>
-      <div className="bookImage">
-        <div className={styles.image}>{<img src={book.thumbnail} />}</div>
+    <div className={styles.BookCard} onClick={onClick}>
+      <div className={styles.bookImage}>
+        <div className={styles.image}>
+          {<img src={book.thumbnail} alt={book.title} />}
+        </div>
       </div>
-      <div className="bookInfo">
+      <div className={styles.bookInfo}>
         <div>{book.title}</div>
 
-        <div className={checkAuthorInfo()}>{book.authors.join(", ")}</div>
-
-        <div
-          className={book.publishedDate === "No date info" ? styles.err : null}
-        >
-          {book.publishedDate}
+        <div className={checkAuthorInfo()}>
+          {book.authors[0]}
+          {book.authors.length > 1 ? ", et al." : null}
         </div>
       </div>
     </div>

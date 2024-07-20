@@ -6,14 +6,14 @@ import { useContext } from "react";
 import { SearchContext } from "../../context/SearchContextProvider";
 import styles from "./Pagination.module.scss";
 
-// GOOGLE API
+// GOOGLE BOOKS API
 // startIndex - starts at 0
 // maxResults - results per page between 1 and 40
 
 const Pagination = ({ totalItems }) => {
   const { currentIndex, setCurrentIndex } = useContext(SearchContext);
 
-  console.log(totalItems);
+  // console.log(totalItems);
 
   if (totalItems === 0) {
     console.log("No items!");

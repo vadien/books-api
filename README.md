@@ -1,5 +1,11 @@
 # Google Books API Search Engine
 
+A small project demonstrating React and API knowledge utilising the Google Books API, built as an assignment during the Nology bootcamp.
+
+[Link to live](https://www.neilld.com/pages/books-api/index.html)
+
+Instructions below for reference:
+
 ## MVP
 
 Create a page that allows users to search for books
@@ -7,9 +13,9 @@ Page should include the following:
 
 - Header section introducing the page
 - Form containing a text input and a submit / search button
-
 - A grid of books
-  Instructions:
+
+## Instructions:
 
 - When the submit button is clicked you need the request books from the Google books API using the input value as your query string
 - The books that you receive should be rendered in the books grid.
